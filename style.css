@@ -1,6 +1,6 @@
 :root{
-  --color1: rgb(55, 165, 141);
-  --color2: rgb(102, 53, 158);
+  --color1: rgb(90, 165, 21);
+  --color2: rgb(241, 189, 46);
 }
 header, footer, section{
   padding: 100px 0;
