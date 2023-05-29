@@ -1,0 +1,42 @@
+.text-lk{
+  position: absolute;
+width: 266px;
+height: 39px;
+left: 54px;
+top: 69px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+}
+.in1{
+margin-top: 150px;
+width: 300px;
+margin-left: 54px;
+}
+
+.in2{
+  margin-top: 10px;
+  width: 300px;
+  margin-left: 54px;
+
+}
+.checkB{
+  margin-left: 54px;
+}
+.priv{
+
+margin-left: 54px;
+margin-top: 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+}
+.but{
+  margin-left: 80px;
+  margin-top: 30px;
+}
