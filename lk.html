@@ -39,7 +39,7 @@
       </label>
     </div>
     <div class="form-check checkB">
-      <input class="form-check-input" name="privichka" type="checkbox" value=" Занимаюсь" id="privichka">
+      <input class="form-check-input" name="privichka" type="checkbox" value=" Занимаюсь спортом" id="privichka">
       <label class="form-check-label" for="flexCheckDefault">
         Занимаюсь спортом
       </label>
@@ -55,10 +55,14 @@
 
 
   <form id="second-form" style="display: none;">
-<h2>Имя: </h2><h2 id="nameForm"></h2>
-<h2>Дата рождения: </h2><h2 id="birthdForm"></h2>
-<h2>Тип питания: </h2><h2 id="pitanieForm"></h2>
-<h2>Привычки: </h2><h2 id="privichkaForm"></h2>
+    <div class="second-form">
+
+<div class="block-text"><h2>Имя:</h2><p> </p><h2 id="nameForm" class="textvalue"></h2></div>
+<div class="block-text"><h2>Дата рождения: </h2><h2 id="birthdForm" class="textvalue"></h2></div>
+<div class="block-text"><h2>Тип питания: </h2><h2 id="pitanieForm" class="textvalue"></h2></div>
+<div class="block-text"><h2>Привычки: </h2><h2 id="privichkaForm" class="textvalue"></h2></div>
+<button type="button" class="btn btn-success but"  onclick="redact()">Редактировать</button>
+</div>
   </form>
 <script>
   function save() {
@@ -74,11 +78,17 @@ document.getElementById('birthdForm').innerHTML = guesBirthd;
 document.getElementById('pitanieForm').innerHTML = pitanieType;
 document.getElementById('privichkaForm').innerHTML = valuesPriv;
 
-const toggleFormsButton = document.getElementById('toggle-forms');
+/*const toggleFormsButton = document.getElementById('toggle-forms');*/
 const form1 = document.getElementById('gen-form');
 const form2 = document.getElementById('second-form');
-form1.style.display = 'none'; // скрыть первую форму
-form2.style.display = 'block'; // показать вторую форму
+form1.style.display = 'none'; 
+form2.style.display = 'block';
+}
+function redact(){
+  const form1 = document.getElementById('gen-form');
+const form2 = document.getElementById('second-form');
+form2.style.display = 'none'; 
+form1.style.display = 'block'; 
 }
 </script>
 
